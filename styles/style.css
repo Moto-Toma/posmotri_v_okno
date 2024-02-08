@@ -257,6 +257,7 @@ ol {
   border: 1px solid #fff;
   color: #fff;
   padding: 6px 0;
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
