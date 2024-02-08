@@ -24,7 +24,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -67,8 +67,7 @@ ol {
 .content__list {
   position: relative;
   block-size: 298px;
-  overflow-y: scroll;
-  scrollbar-width: none;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -90,8 +89,7 @@ ol {
 }
 
 .title {
-  width: 260px;
-  height: 210px;
+  max-width: 260px;
   font-family: Oswald, Arial, Helvetica, sans-serif;
   font-size: 75px;
   font-weight: 700;
@@ -168,6 +166,7 @@ ol {
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .content__video-card-description {
@@ -195,18 +194,30 @@ ol {
 }
 
 .search-form__textfield {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  color: #fff;
+  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+  color: rgb(255 255 255/0.7);
   font-size: 18px;
   font-weight: 400;
   text-align: start;
   width: 225px;
   background-color: transparent;
-  outline: none;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   appearance: none;
+  cursor: pointer;
+}
+
+.search-form__textfield:hover {
+  cursor: text;
+}
+
+.search-form__textfield:active {
+  outline: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__checkbox-list {
@@ -230,7 +241,7 @@ ol {
   display: block;
   width: 15px;
   height: 15px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -238,7 +249,7 @@ ol {
 }
 
 .button {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
@@ -246,6 +257,8 @@ ol {
   border: 1px solid #fff;
   color: #fff;
   padding: 6px 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .button:hover {
