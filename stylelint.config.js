@@ -1,6 +1,6 @@
 module.exports = {
-    rules: {
-        'color-no-invalid-hex': true,
+  rules: {
+    'color-no-invalid-hex': true,
     'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
     'property-no-unknown': true,
     'declaration-block-no-duplicate-properties': true,
@@ -26,5 +26,5 @@ module.exports = {
     'at-rule-empty-line-before': 'always',
     'selector-class-pattern': null,
     'font-family-name-quotes': 'always-where-recommended',
-    }
-  } 
+  },
+};
